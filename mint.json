@@ -54,16 +54,19 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Process",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development",
-        "essentials/code",
+        "process/overview",
         {
-            "group": "Nested Reference Pages",
-            "pages": ["essentials/markdown"]
+            "group": "Development",
+            "pages": [
+              "process/development/setup",
+              "process/development/integrations",
+              "process/development/components",
+            ]
         }
+        "process/migration",
+        "process/testing"
       ]
     },
     {
