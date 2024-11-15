@@ -54,7 +54,11 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "development",
+        {
+            "group": "Nested Reference Pages",
+            "pages": ["nested-reference-page"]
+        }
       ]
     },
     {
