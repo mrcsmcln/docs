@@ -57,7 +57,7 @@
         "development",
         {
             "group": "Nested Reference Pages",
-            "pages": ["nested-reference-page"]
+            "pages": ["essentials/markdown"]
         }
       ]
     },
