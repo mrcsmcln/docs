@@ -15,6 +15,10 @@
       "to": "#07C983"
     }
   },
+  "primaryTab": {
+    "name": "Process",
+    "url": "process/overview"
+  },
   "topbarLinks": [
     {
       "name": "Support",
@@ -55,6 +59,7 @@
         "introduction",
         "quickstart",
         "development",
+        "essentials/code",
         {
             "group": "Nested Reference Pages",
             "pages": ["essentials/markdown"]
@@ -88,8 +93,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/simpscar",
+    "github": "https://github.com/simpscar",
+    "linkedin": "https://www.linkedin.com/company/simpsonscarborough/"
   }
 }
