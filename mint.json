@@ -64,7 +64,7 @@
               "process/development/integrations",
               "process/development/components"
             ]
-        }
+        },
         "process/migration",
         "process/testing"
       ]
