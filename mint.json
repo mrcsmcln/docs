@@ -62,7 +62,7 @@
             "pages": [
               "process/development/setup",
               "process/development/integrations",
-              "process/development/components",
+              "process/development/components"
             ]
         }
         "process/migration",
