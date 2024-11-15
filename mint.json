@@ -16,8 +16,7 @@
     }
   },
   "primaryTab": {
-    "name": "Process",
-    "url": "process/overview"
+    "name": "Process"
   },
   "topbarLinks": [
     {
