@@ -1,10 +1,56 @@
----
-title: "Testing"
-description: "Description of your new file."
----
+<Warning>This section is under construction.</Warning>
 
-## Components
+## Introduction
+Testing, also known as quality assurance (QA), is critical for client satisfaction. We do our best to ensure the work we deliver requires as little client review as possible. To do this, we approach testing in three phases: Engineering testing, internal testing, and client testing.
+
+## Engineering testing
+Engineering testing is performed entirely within the Engineering team. Namely, the Solution Architect reviews the work.
+
+### Design
+We create components based on the provided designs.
+
+Styles, responsive
+
+### Functionality
+We build websites according to the functional specifications outlined in the designs.
+
+Field testing
+
+### Content
+
+We manually build pages according to the mockups we receive in the [Design phase](/process/design). We also migrate data as specified in the [Strategy phase](/process/strategy).
+
+After the data has been migrated, we manually check the site to ensure the migration was successful. This involves checking up to 15 records per data source and confirming the data was transferred accurately and completely.
+
+### Accessibility
+
+We target [WCAG 2.2 Level AA](https://www.w3.org/TR/WCAG22/) compliance on all web projects. We conduct automated scans with [Siteimprove](https://www.siteimprove.com) in addition to manual testing.
+
+If we are delivering a CMS, some aspects of compliance will fall on content authors. In particular, success criteria related to content such as providing alternative text for images will need attention.
+
+If the client is concerned about ongoing compliance, we recommend setting up automated reporting with Siteimprove. If this service is cost-prohibitive, the client may manually test their pages with Siteimprove's free [browser extensions](https://www.siteimprove.com/integrations/browser-extensions/).
+
+### Performance
+
+A high-performance website brings several benefits, including faster load times, lower bounce rates, more engagement, and less data usage.
+
+We target a [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) [performance score](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring) of 90 or above.
+
+Web performance is a complex topic with many contributing factors. See the [performance section](/digging-deeper/performance) for more information.
+
+### Search engine optimization
+
+We aren't an SEO shop, so testing is generally limited to technical concerns.
+
+## Internal testing
+Once the Engineering team is happy with the work, the internal project team takes a look and reports on any issues they find.
+
+## Client testing
+Finally, the client reviews the work for defects. At this point, feedback should be very minor.
 
 
 
-## Migrations
+
+
+
+

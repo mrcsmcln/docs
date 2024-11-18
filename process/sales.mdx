@@ -1,0 +1,65 @@
+<Warning>This section is under construction.</Warning>
+
+## Introduction
+
+Each section on this page is required to be included in all proposals.
+
+## Strategy
+
+Org assessment
+
+## Components
+
+<Warning>All website scopes must include a component count.</Warning>
+
+The time a website takes to build scales linearly with the number of [components](/digging-deeper/components) that need to be developed. For example, it takes approximately twice as long to build ten components as it does to build five components.
+
+For this reason, it's critically important to include a component count in the scope of work. For .edu redesigns, we generally budget 40 components. For microsites, we can go as low as 10, though 15 is better. For landing pages, it's technically possible to make a single-component website, though that's usually unwise. When it doubt, consult Interactive and Engineering for guidance.
+
+## Integrations
+
+<Warning>All website scopes must include an integration statement, even if no integrations are included.</Warning>
+
+Developers use integrations to add functionality from an external service to websites that would otherwise take much longer to build from scratch. The most common type of integration for marketing websites is forms. Form submission logic is quite involved, so it's generally best to outsource that work to another platform such as Salesforce.
+
+Another common type of integration concerns event management systems like [Eventbrite](https://www.eventbrite.com). We'll be using this as an example throughout this section.
+
+Below you will find common integration formats, in ascending order of complexity. The more complex the integration, the more we are able to customize it.
+
+### Links
+Links are the simplest way to integrate a service. Just add a link to the page that points to the service and you're done. In the case of our Eventbrite example, the integration would be a link to a page on Eventbrite's website.
+
+### Inline frames
+Inline frames, more commonly known as _iframes_, allow developers to embed a website we don't control inside a website we do control. Iframes are popular because they're super easy to implement. It's literally one line of code—but there's a catch.
+
+Due to browser security restrictions, we can't customize iframes at all. For example, if you want to add an iframe containing a list of events from Eventbrite, you can't customize how that list looks, which filtering options are present, or anything else for that matter.
+
+### JavaScript
+JavaScript integrations involve pasting a short code snippet into the website. This code directly modifies the code of the website we're working, bypassing the browser security restrictions that plague iframes.
+
+This integration format allows us to lightly customize its appearance and behavior. The degree to which we're able to make changes varies wildly between integrations. For this reason, we recommend checking with Engineering before promising anything.
+
+
+### APIs
+Sometimes, websites require truly custom experiences. Perhaps we want total control over the design, or a complex process needs to be completed. In these cases, we reach for APIs (application programming interfaces). With APIs, just about anything is possible with the right budget and timeline.
+
+Let's say you want to add a lead to Salesforce and send an email notification every time someone registers for an event, which the client wants to happen directly on their branded website and not in Eventbrite. Something like this would require an API integration.
+
+API integrations involve detailed specifications, a lot of custom code, and extensive testing. At this time, all API integrations are priced individually by Engineering. We plan to publish general pricing in the future.
+
+
+## Content Management System
+
+We currently support two content mangement systems (CMSes) in-house: [WordPress](https://wordpress.org) and [Drupal](https://www.drupal.org). We actively investigating supporting [Cascade CMS](https://www.hannonhill.com/products/cascade-cms-web-content-management/index.html).
+
+Supported CMS development usually adds roughly 50% to the total effort less integrations. Unsupported CMS development must be outsourced to vendors, which is generally expensive.
+
+
+## Migrations
+
+For websites with a [content management system](#content-management-system), migration is often necessary. For pricing, we consider the total number of data sources and destinations. Generally, there will only be one destination.
+
+## Pricing
+Pricing a website is complex. To keep things simple, we've created a formula:
+
+<Latex>8 \times 9</Latex>

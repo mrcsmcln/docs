@@ -1,6 +1,135 @@
----
-title: "Migration"
-description: "Description of your new file."
----
+<Warning>This section is under construction.</Warning>
 
-##
+## Introduction
+Migration is the process of moving data from one location to another. This process occurs after the Development phase.
+
+## Definitions
+
+### Sources
+A source is where data exists before it is migrated. Common data sources include an old website, spreadsheets, and text documents.
+
+### Destinations
+A destination is where data will exist after it is migrated. Most web projects have only a single data destination—the new website.
+
+### Collections
+A collection is a group of similarly-structured content. The elements of a collection are called *items*. Pages, articles, and programs are all examples of collections.
+
+<Note>Different CMSes use different terms to refer to collections. In WordPress, collections are called post types. In Drupal, they're called content types. For consistency, we will use the term *collection* throughout this documentation.</Note>
+
+### Taxonomies
+A taxonomy is a data structure used to organize collections. The elements of a taxonomy are called *terms*. Tags and categories are examples of commonly-used taxonomies.
+
+Consider a university website that groups it programs by categories. In this example, *programs* is the collection and *categories* is the taxonomy.
+
+Taxonomies can be either flat or hierarchical. Flat taxonomies are a simple list of unrelated terms, while the terms of hierarchical taxonomies may have parent-child relationships. Tags are generally flat, while categories are often hierarchical.
+
+<Tabs>
+  <Tab title="Tags (flat taxonomy)">
+    - Design inspiration
+    - Fashion advice
+    - Headphone reviews
+    - Personal finance
+    - Shower thoughts
+    - Summer vacation
+  </Tab>
+  <Tab title="Categories (hierarchical taxonomy)">
+    - Foods
+      - Italian
+        - Lasagna
+        - Risotto
+      - Mexican
+        - Burritos
+        - Tacos
+    - Sports
+      - Basketball
+      - Football
+  </Tab>
+</Tabs>
+
+### Associations
+An association is a relationship between a collection item and a taxonomy term. For example, if an article (collection item) belongs to a category (taxonomy term), we call that relationship an association.
+
+Consider the following lists of programs and locations:
+
+<CardGroup>
+  <Card title="Programs (collection)">
+    - Applied Mathematics
+    - Computer Science
+    - Biomedical Engineering
+  </Card>
+  <Card title="Locations (taxonomy)">
+    - New York
+    - Los Angeles
+    - Chicago
+  </Card>
+</CardGroup>
+
+These two lists above don't tell us which programs belong to which categories. For that relationship, we need a list of associations:
+
+<CardGroup>
+  <Card title="Associations">
+    - Applied Mathematics ↔ New York
+    - Applied Mathematics ↔ Los Angeles
+    - Computer Science ↔ New York
+    - Computer Science ↔ Chicago
+    - Biomedical Engineering ↔ Los Angeles
+  </Card>
+</CardGroup>
+
+With the list above, we see that Applied Mathematics is offered in New York and Los Angeles, but not Chicago.
+
+## Planning
+A successful migration begins with the proper preparation.
+
+### Sale
+Migration planning begins during the Sale phase. At this point, the total number of data sources and destinations should be specified. We should also specify whether we will be migrating [associations](#associations). Associations generally require an additional data source.
+
+This puts guardrails on the project and gives us an idea for the amount of effort needed.
+
+### Strategy
+During the Strategy phase, we determine which specific collections will be migrated and how they will be migrated.
+
+For each collection, the following concerns need to be addressed:
+
+- What is the data source?
+- What is the data destination?
+- Which migration [technique](#techniques) will we use?
+
+### Design
+Migration must also be considered during the Design phase, as the design must support the data to be migrated. We should check for the following:
+
+- Collections
+- Taxonomies
+
+
+## Migration types
+
+### Local migration
+Migration should first be performed locally. This enables rapid debugging and mitigates the risk of data loss.
+
+### Server migration
+Once the developer has a migration process working on their local machine,  a working migration
+
+### Final migration
+
+
+## Cadence
+Migration is performed on a per-collection basis. The type of migration determines when it is performed. For example, all pages get migrated at once, and may occur at any time during development.
+
+## Exporting data
+
+
+## Importing data
+Depending on the complexity of the data to be migrated, developers may opt to either use a plugin or write a custom script to perform the migration.
+
+### Migration plugins
+For simple migrations, a
+
+### Migration scripts
+
+### Manual migration
+Manual migration is the most time-consuming technique as it requires a human to manually enter content in the destination CMS. As such, it should be avoided at all costs.
+
+
+## Testing
+It is extremely important to test that the migration has been performed successfully.

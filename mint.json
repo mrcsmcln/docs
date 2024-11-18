@@ -1,96 +1,57 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Engineering",
+  "theme": "quill",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
+    "primary": "#09090b",
+    "light": "#FAFAFA",
+    "dark": "#09090b"
   },
-  "primaryTab": {
-    "name": "Process"
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "SimpsonScarborough",
+    "url": "https://simpsonscarborough.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Process",
+      "group": "Getting started",
       "pages": [
-        "process/overview",
-        {
-            "group": "Development",
-            "pages": [
-              "process/development/setup",
-              "process/development/integrations",
-              "process/development/components"
-            ]
-        },
+        "getting-started/purpose",
+        "getting-started/team"
+      ]
+    },
+    {
+      "group": "Our process",
+      "pages": [
+        "process/sales",
+        "process/strategy",
+        "process/design",
+        "process/development",
         "process/migration",
-        "process/testing"
+        "process/testing",
+        "process/launch"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Digging deeper",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "digging-deeper/accessibility",
+        "digging-deeper/components",
+        "digging-deeper/content-management",
+        "digging-deeper/frameworks",
+        "digging-deeper/integrations",
+        "digging-deeper/performance",
+        "digging-deeper/styling"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Resources",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "resources/materials-request"
       ]
     }
   ],

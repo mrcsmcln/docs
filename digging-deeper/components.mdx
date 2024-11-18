@@ -1,0 +1,26 @@
+<Warning>This section is under construction.</Warning>
+
+## Introduction
+
+Components are the building block of websites. Think of them like self-contained units with _properties_ we can use to control their content, behavior, and appearance. Components can be defined once and used anywhere.
+
+Here is a link component, which accepts a `url` and `text` property:
+
+```twig
+<a href="{{ url }}">{{ text }}</a>
+```
+
+Now we pass some data into the component:
+
+```json
+{
+  "text": "Apply now",
+  "url": "https://makebelieve.edu/apply"
+}
+```
+
+This produces the following component _instance_:
+
+```html
+  <a href="https://makebelieve.edu/apply">Apply now</a>
+```
